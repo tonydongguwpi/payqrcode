@@ -121,7 +121,7 @@ const wechatFileList = ref<any>()
 const wechatVal = ref<any>()
 const wechatQrcodeImg = ref<string>()
 // 微信收款码白名单
-const wechatWhiteList = ['wxp://', 'weixin.qq.com', 'wechatpay.cn']
+const wechatWhiteList = ['wxp://', 'weixin.qq.com', 'wechatpay.cn','payapp.wechatpay.cn']
 const wechatChange = async (v: any) => {
   wechatFileList.value = v && v.length ? v[0].raw : wechatFileList.value
   if (!wechatFileList.value) return
